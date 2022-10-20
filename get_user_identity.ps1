@@ -1,3 +1,4 @@
+# Get user information from their ID and save the data in $output file 
 $user  = Get-Content "Path\user.txt"
 $output = "Path\user.csv"
 
