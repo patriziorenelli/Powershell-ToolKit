@@ -2,7 +2,7 @@
 $group = "xxxx"
 $user = Get-ADGroupMember -Identity $group | Select-Object -ExpandProperty name
 $outputfile = "Path\users_$group.txt"
-"User ID ,Name, Surname" >> $outputfile
+"User ID, Name, Surname" >> $outputfile
 
 foreach($ut in $user){
     if ($ut.Contains(' ')){
