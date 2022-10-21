@@ -1,4 +1,4 @@
-ToolKit useful to interact with Microsft Active Directory
+ToolKit useful to smart interact with Microsft Active Directory
 Types of scripts:
 - Data Extraction
 - remote control and launch of commands
