@@ -12,3 +12,4 @@
 - get_DC_name: Get all DC name in our domain
 - change_email: Set user email from csv data
 - search_server: check if the servers present in the input file are present in our domain
+- check_empty_group: check if the groups present in the input file are empty
