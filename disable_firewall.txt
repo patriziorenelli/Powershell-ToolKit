@@ -1,0 +1,4 @@
+Enter-PSSession -ComputerName nomeServerACuiDisabilitareIlFirwall
+Get-NetFirewallProfile | Format-Table Name, Enabled
+Set-NetFirewallProfile -Profile Domain -Enabled False
+Exit-PSSession
