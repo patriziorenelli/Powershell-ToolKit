@@ -1,0 +1,8 @@
+Import-CSV InputFilePath | foreach {Set-AdUser -identity $_.names -emailaddress $_.mail}
+---
+csv example: 
+Names,mail
+userId1, exampleEmail1@domain.com
+userId2, exampleEmail2@domain.com
+----
+
