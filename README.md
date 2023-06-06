@@ -10,3 +10,4 @@
 - get_user_last_logon: Get the last use logon
 - get_user_identity: Get user information from their ID 
 - get_DC_name: Get all DC name in our domain
+- change_email: Set user email from csv data
