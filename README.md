@@ -11,3 +11,4 @@
 - get_user_identity: Get user information from their ID 
 - get_DC_name: Get all DC name in our domain
 - change_email: Set user email from csv data
+- search_server: check if the servers present in the input file are present in our domain
