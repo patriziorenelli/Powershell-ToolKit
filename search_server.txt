@@ -1,0 +1,13 @@
+$server= Get-Content "input file path"
+$output = 'output file path'
+"Hostname,Present"
+forEach( $s in $server){
+        try{
+            $x = Get-ADComputer $s
+            "$s,SERVER FOUND" >> $output
+            Write-Host "$s : SERVER FOUND" -ForegroundColor Green 
+        }catch [Microsoft.ActiveDirectory.Management.ADIdentityNotFoundException]{
+            "$s,SERVER NOT FOUND" >> $output
+            Write-Host "$s : SERVER NOT FOUND"    -ForegroundColor Red
+        }   
+}
