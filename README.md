@@ -14,3 +14,4 @@
 - search_server: check if the servers present in the input file are present in our domain
 - check_empty_group: check if the groups present in the input file are empty
 - generate_random_password: generate secure random password of 12 characters
+- disable_fireawall: script to disable remote server firewall
