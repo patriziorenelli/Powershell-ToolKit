@@ -1,0 +1,16 @@
+$gruppi = Get-Content "Input group list file"
+$outputf = "Output file"
+$cont = 0
+"Group,Users" >> $outputf
+foreach($g in $gruppi){
+        $user = Get-ADGroupMember -Identity $g | Select-Object -ExpandProperty name
+        foreach($u in $user){
+            $cont = $cont +1 
+        }
+        if($cont -eq 0){
+            "$g,EMPTY" >> $outputf
+        }else{
+            "$g,FULL" >> $outputf
+        }
+        $cont = 0
+}
